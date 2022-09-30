@@ -12,6 +12,7 @@ public class CompilerBasedReference {
         test.m1(monkey);
         animal = new Monkey();
         test.m1(animal); // Method Resolution(Overloading) is based on compiler. Therefore runtime object won't be considered and animal version will run
+        test.m1(null); // child object is given priority over parent
     }
 }
 
