@@ -1,0 +1,12 @@
+Java8 brings in functional programming enabled by Lambda expression to create concise code
+
+Features of Java 8
+
+1. Lambda Expression
+2. Functional Interface
+3. Stream API
+4. Default and Static methods in Interfaces
+5. Optional Class
+6. Method References and Constructor References
+7. Date API
+8. Nashorn, Javascript Engine
