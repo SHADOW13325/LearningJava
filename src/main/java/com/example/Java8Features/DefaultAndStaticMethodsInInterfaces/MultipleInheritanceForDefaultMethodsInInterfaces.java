@@ -1,4 +1,4 @@
-package com.example.Modifiers.Interfaces;
+package com.example.Java8Features.DefaultAndStaticMethodsInInterfaces;
 
 interface Left {
     default void m1() {
@@ -26,4 +26,8 @@ public class MultipleInheritanceForDefaultMethodsInInterfaces implements Left, R
     }
 }
 
-//  We need to overide the default method here else it eill create CE regarding ambiguity
+/*
+  We need to override the default method here else it will create CE regarding ambiguity.
+  To call the interface default method use an instance reference method of class
+  and then type InterfaceName.super.methodName()
+*/
