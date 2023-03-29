@@ -18,4 +18,4 @@ public class SimpleLambdaExpression {
 }
 
 //  Lambda expression is a function without name, return type and access modifier. It just add lambda symbol (->).
-//  (a, b) -> System.out.println(a + b); is the lambda expression
+//  (a, b) -> System.out.println(a + b); is the lambda expression. We need functional Interface to invoke lambda expression

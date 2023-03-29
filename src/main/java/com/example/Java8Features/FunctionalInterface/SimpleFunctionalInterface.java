@@ -24,7 +24,7 @@ public interface SimpleFunctionalInterface {
 
 //  Rules to create Functional Interface
 //  1. Create Interface
-//  2. Use @FunctionalInterface Annotation over the Interface
+//  2. Use @FunctionalInterface Annotation over the Interface (Optional)
 //  3. It must have exactly 1 abstract method
 //  4. No Limit on Default and Static Methods
 //  There are many functional interfaces already present in java. Eg: Comparable, Runnable
