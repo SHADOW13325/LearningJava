@@ -1,6 +1,7 @@
 package com.example.Java8Features.Streams;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -59,6 +60,12 @@ public class ProcessingOfStreams {
         String[] name ={"Amar", "Akbar", "Anthony"};
         Stream.of(name).filter(i -> i.length() <= 5).forEach(System.out::println);
 
+        System.out.println("For flattening a list of lists into single, we can use flatmap");
+        getPersons().stream().flatMap(person -> person.getPhoneNumbers().stream()).forEach(s -> System.out.print(s + " , "));
+
+        System.out.println("For getting all unique elements we can use distinct()");
+        Arrays.asList(1,1,1,2,2).stream().distinct().forEach(System.out::println);
+
     }
 }
 
@@ -67,6 +74,16 @@ class Person {
     private String name;
     private int age;
     private Gender gender;
+
+    List<String> phoneNumbers;
+
+    public List<String> getPhoneNumbers() {
+        return phoneNumbers;
+    }
+
+    public void setPhoneNumbers(List<String> phoneNumbers) {
+        this.phoneNumbers = phoneNumbers;
+    }
 
     public String getName() {
         return name;
@@ -97,10 +114,11 @@ class Person {
         MALE, FEMALE;
     }
 
-    public Person(String name, int age, Gender gender) {
+    public Person(String name, int age, Gender gender, List<String> phoneNumbers) {
         this.name = name;
         this.age = age;
         this.gender = gender;
+        this.phoneNumbers = phoneNumbers;
     }
 
     @Override
@@ -109,18 +127,19 @@ class Person {
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", gender=" + gender +
+                ", phoneNumbers=" + phoneNumbers +
                 '}';
     }
 
     public static List<Person> getPersons(){
         return  Stream.of(
-                new Person("A", 10, Person.Gender.MALE),
-                new Person("B", 100, Person.Gender.FEMALE),
-                new Person("C", 90, Person.Gender.MALE),
-                new Person("D", 20, Person.Gender.FEMALE),
-                new Person("E", 5, Person.Gender.MALE),
-                new Person("A", 5, Person.Gender.MALE),
-                new Person("F", 55, Person.Gender.FEMALE)
+                new Person("A", 10, Person.Gender.MALE, Arrays.asList("1234567890", "5464354436")),
+                new Person("B", 100, Person.Gender.FEMALE, Arrays.asList("8765430989", "1489464664")),
+                new Person("C", 90, Person.Gender.MALE, Arrays.asList("5345353454", "3546435345")),
+                new Person("D", 20, Person.Gender.FEMALE, Arrays.asList("7646354353", "3535464563")),
+                new Person("E", 5, Person.Gender.MALE, Arrays.asList("2435345464", "5346353543")),
+                new Person("A", 5, Person.Gender.MALE, Arrays.asList("5443656343", "3543435453")),
+                new Person("F", 55, Person.Gender.FEMALE, Arrays.asList("3534353464", "7355463443"))
         ).collect(Collectors.toList());
 
 

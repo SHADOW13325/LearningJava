@@ -27,6 +27,10 @@ public class StreamUsecase {
 
         System.out.println("Creating Streams");
         Stream s = arrayList.stream();
+
+        System.out.println("Traversing/Iterating of stream can happen only once");
+        s.forEach(System.out::println);
+//        s.forEach(System.out::println);  // stream has already been operated upon or closed
     }
 
     public static List<Integer> getElements(List<Integer> arrayList){
@@ -45,3 +49,4 @@ public class StreamUsecase {
 
 //  When we have to process bulk objects, we can use streams
 //  It is a iterator class that allows processing of collection of objects in a functional manner.
+//  Also, this iterating can happen only once on a stream.

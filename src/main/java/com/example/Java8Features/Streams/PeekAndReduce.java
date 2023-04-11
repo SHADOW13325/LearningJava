@@ -23,6 +23,10 @@ public class PeekAndReduce {
         System.out.println("Reduce is used to combine elements of stream to produce a single value");
         long sum = arrayList.stream().reduce((a, b) -> a + b).get();
         System.out.println("Sum of the array is " + sum);
+        sum = arrayList.stream().reduce(10, (a, b) -> a + b);
+        System.out.println("Sum of the array after identity operator is " + sum);
+
+
 
     }
 }

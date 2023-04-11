@@ -1,6 +1,8 @@
 package com.example.Java8Features.Streams;
 
+import java.util.Arrays;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class ParallelStream {
 
@@ -13,6 +15,10 @@ public class ParallelStream {
         startTime = System.currentTimeMillis();
         IntStream.range(1, 1000).parallel().map(i -> i * i).count();
         System.out.println("Parallel Stream time : " + (System.currentTimeMillis() - startTime));
+
+//        2 ways to create parallel Stream
+        Stream parallelStream1 = Arrays.asList(1, 2, 3, 4, 5).parallelStream();
+        Stream parallelStream2 = Arrays.asList(1, 2, 3, 4, 5).stream().parallel();
     }
 }
 
