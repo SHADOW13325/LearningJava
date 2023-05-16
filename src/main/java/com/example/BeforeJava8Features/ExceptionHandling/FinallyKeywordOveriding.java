@@ -1,5 +1,8 @@
-package com.example.ExceptionHandling;
+package com.example.BeforeJava8Features.ExceptionHandling;
 
+/**
+ * @author saumitra chauhan
+ */
 public class FinallyKeywordOveriding {
 
     public static void main(String[] args) {

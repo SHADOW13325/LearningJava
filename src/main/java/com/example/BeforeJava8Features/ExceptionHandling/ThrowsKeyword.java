@@ -1,5 +1,8 @@
-package com.example.ExceptionHandling;
+package com.example.BeforeJava8Features.ExceptionHandling;
 
+/**
+ * @author saumitra chauhan
+ */
 public class ThrowsKeyword {
 
 //    can't use throws keyword in instance block
@@ -88,10 +91,12 @@ class ThrowsWithCheckedException {
     }
 }
 
-// When using try catch if compiler didn't find any way a fully checked exception can be thrown
-// in try block and you try to catch in the catch block compiler will throw
-// CE saying exception xxx never thrown in the body of corresponding try statement but
-// if we use throws keyword instead of try catch then no CE
-//
-// throws keyword can only throw throwable objects
-// throws keyword can be used with constructors and methods but not with static and instance block
+/*
+ When using try catch if compiler didn't find any way a fully checked exception can be thrown
+ in try block and you try to catch in the catch block compiler will throw
+ CE saying exception xxx never thrown in the body of corresponding try statement but
+ if we use throws keyword instead of try catch then no CE
+
+ throws keyword can only throw throwable objects
+ throws keyword can be used with constructors and methods but not with static and instance block
+*/

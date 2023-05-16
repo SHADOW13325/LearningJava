@@ -1,6 +1,9 @@
-package com.example.ExceptionHandling;
+package com.example.BeforeJava8Features.ExceptionHandling;
 
-public class CustomizedExceptionHandling {
+/**
+ * @author saumitra chauhan
+ */
+public class ExceptionPrinting {
 
     public static void main(String[] args) {
 

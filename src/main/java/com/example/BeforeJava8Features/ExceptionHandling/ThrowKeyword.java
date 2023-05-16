@@ -1,5 +1,8 @@
-package com.example.ExceptionHandling;
+package com.example.BeforeJava8Features.ExceptionHandling;
 
+/**
+ * @author saumitra chauhan
+ */
 public class ThrowKeyword {
 
     public static ArithmeticException arithmeticException;
@@ -30,4 +33,7 @@ class ThrowableObject extends RuntimeException {
 
 }
 
-//  throw keyword throws Objects of class Throwable or its child classes and it should not be NULL
+/*
+  throw keyword throws Objects of class Throwable or its child classes, and it should not be NULL.
+  Also, there should be no direct statement after throw statement or else CE: Unreachable statement
+*/

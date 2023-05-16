@@ -1,4 +1,8 @@
-package com.example.ExceptionHandling;
+package com.example.BeforeJava8Features.ExceptionHandling;
+
+/**
+ * @author saumitra chauhan
+ */
 
 import java.io.*;
 
@@ -62,7 +66,7 @@ class TryMultipleCatch {
         }
     }
 }
-//      Exception hierarchy must be from child to parent else CE
+//      Exception hierarchy must be from child to parent else CE exception xxx has already been caught
 
 class TryMultipleCatchWithSameExceptionOrChildExceptionRepeat {
 
@@ -81,9 +85,11 @@ class TryMultipleCatchWithSameExceptionOrChildExceptionRepeat {
 //        }
     }
 }
-//      Exception or its child class should not get repeated
-//      CE: exception j.l.AE has already been caught
-//      CE: exception j.l.E has already been caught
+/*
+      Exception or its child class should not get repeated
+      CE: exception j.l.AE has already been caught
+      CE: exception j.l.E has already been caught
+*/
 
 class TryCatchFinally {
 
@@ -145,7 +151,7 @@ class TryOnly {
 //        }
     }
 }
-//      Try Block needs either catch or finally block CE: 'try' without 'catch', 'finally' or resource declarations
+//      Try Block needs either catch or finally block, else CE: 'try' without 'catch', 'finally' or resource declarations
 
 class CatchOnly {
 
@@ -305,7 +311,10 @@ class MultipleTryBlock {
 //        }
     }
 }
-//      Inside a single template only 1 try block is allowed which should be immediately followed by catch or finally block
+/*
+      Inside a single template only 1 try block is allowed which should be immediately followed by catch or finally block,
+      else CE: 'try' without 'catch', 'finally' or resource declarations
+*/
 
 class MultipleFinallyBlock {
 
@@ -347,11 +356,13 @@ class TryWithResources{
         }
     }
 }
-// In 1.6v or before catch or finally was required to close any resource opened in try block but
-// from 1.7v onwards we can use try with resources and define auto-closeable resources in the try block.
-// These resources will be automatically closed by the jvm with the auto-closeable interface which eventually
-// reduces the work of catch and finally for the closing part.
-// These resources can't be reinitialised. The variables are final else CE
+/*
+ In 1.6v or before catch or finally was required to close any resources opened in try block but
+ from 1.7v onwards we can use try with resources and define auto-closeable resources in the try block.
+ These resources will be automatically closed by the jvm with the auto-closeable interface which eventually
+ reduces the work of catch and finally for the closing part.
+ These resources can't be reinitialised. The variables are final else CE
+*/
 
 class MultiCatchBlock {
     public static void Calling(){
@@ -373,5 +384,7 @@ class MultiCatchBlock {
 //        }
     }
 }
-// From 1.7v onwards we can club different exceptions into one catch block if the handling code is the same
-// But there should not be any parent-child | child-parent relationships between the exceptions else CE
+/*
+ From 1.7v onwards we can club different exceptions into one catch block if the handling code is the same
+ But there should not be any parent-child | child-parent relationships between the exceptions else CE
+*/
