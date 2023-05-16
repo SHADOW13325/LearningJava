@@ -1,7 +1,11 @@
-package com.example.Collections.Enums;
+package com.example.BeforeJava8Features.Collections.Enums;
 
+/**
+ * @author saumitra chauhan
+ */
 public enum DeclarationOfEnum {}
 
+// empty enum is perfect java syntax
 enum DeclarationOfEnumWithDefault {}
 
 strictfp enum DeclarationOfEnumWithStrictfp {}
@@ -26,6 +30,7 @@ class EnumInsideClass {
 
 enum EnumInsideEnum {
 
+    // semicolon is must if there are members other than enum constants in the first line
     ;
 
     public enum InnerEnumWithPublic {}

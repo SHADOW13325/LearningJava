@@ -1,5 +1,9 @@
-package com.example.Collections.Generics;
+package com.example.BeforeJava8Features.Collections.Generics;
 
+/**
+ * @author saumitra chauhan
+ * @param <T>
+ */
 public class BoundedGenericClass<T extends Number> {
 
     public static void main(String[] args) {
@@ -15,3 +19,8 @@ class UnboundedGenericClass<T> {
         UnboundedGenericClass<Integer> integerUnboundedGenericClass = new UnboundedGenericClass<>();
     }
 }
+
+/*
+    class xyz <T extends x> {...}
+    If x is a class or interface, we can pass either x or its child classes.
+ */

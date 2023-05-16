@@ -1,5 +1,9 @@
-package com.example.Collections.Generics;
+package com.example.BeforeJava8Features.Collections.Generics;
 
+/**
+ * @author saumitra chauhan
+ * @param <T>
+ */
 public class GenericClass<T> {
 
     T obj;

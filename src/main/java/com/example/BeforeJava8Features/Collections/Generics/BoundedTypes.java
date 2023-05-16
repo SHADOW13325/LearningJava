@@ -1,5 +1,9 @@
-package com.example.Collections.Generics;
+package com.example.BeforeJava8Features.Collections.Generics;
 
+/**
+ * @author saumitra chauhan
+ * @param <T>
+ */
 // extends more than 1 interface
 class BoundedTypes1<T extends Runnable & Comparable> {}
 

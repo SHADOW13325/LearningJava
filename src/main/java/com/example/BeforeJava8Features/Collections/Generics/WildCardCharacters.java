@@ -1,4 +1,7 @@
-package com.example.Collections.Generics;
+package com.example.BeforeJava8Features.Collections.Generics;
+/**
+ * @author saumitra chauhan
+ */
 
 import java.util.ArrayList;
 
@@ -38,3 +41,8 @@ public class WildCardCharacters {
 //    public void m1(ArrayList<String> l){}
     public void m1(ArrayList<Integer> l){}
 }
+
+/*
+ Wildcard character (?) can be used to reduce code by declaring general method for generic type.
+ super keyword at method level is allowed with wildcard character.
+*/

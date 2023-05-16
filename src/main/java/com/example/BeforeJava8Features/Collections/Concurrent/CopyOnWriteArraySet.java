@@ -1,5 +1,5 @@
-package com.example.Collections.Concurrent;
-/*
+package com.example.BeforeJava8Features.Collections.Concurrent;
+/**
     @author
     saumitra chauhan
 */
@@ -49,3 +49,9 @@ public class CopyOnWriteArraySet extends Thread{
         System.out.println(threadList);
     }
 }
+
+/*
+ On update operation, CopyOnWriteArraySet creates a cloned copy of underlying and
+ at a certain point both will be synchronized automatically
+ Here insertion order is preserved
+*/

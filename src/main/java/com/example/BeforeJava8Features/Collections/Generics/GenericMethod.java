@@ -1,5 +1,8 @@
-package com.example.Collections.Generics;
+package com.example.BeforeJava8Features.Collections.Generics;
 
+/**
+ * @author saumitra chauhan
+ */
 public class GenericMethod {
 
     public <T> void m1(T t){

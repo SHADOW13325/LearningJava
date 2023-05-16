@@ -1,5 +1,8 @@
-package com.example.Collections.Enums;
+package com.example.BeforeJava8Features.Collections.Enums;
 
+/**
+ * @author saumitra chauhan
+ */
 public enum EnumMethods {
 
     JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC;

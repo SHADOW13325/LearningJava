@@ -1,5 +1,8 @@
-package com.example.Collections.Enums;
+package com.example.BeforeJava8Features.Collections.Enums;
 
+/**
+ * @author saumitra chauhan
+ */
 public enum Beer {
 
     KF(20), RC;
@@ -28,7 +31,9 @@ public enum Beer {
     }
 }
 
-// Every enum constant is public static final.
-// Every enum constant rep an object of the type enum
-// KF definition => public static final Beer KF = new Beer();
+/*
+ Every enum constant is public static final.
+ Every enum constant represent an object of the type enum
+ KF definition => public static final Beer KF = new Beer();
+*/
 

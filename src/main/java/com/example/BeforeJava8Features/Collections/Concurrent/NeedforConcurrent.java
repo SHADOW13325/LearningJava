@@ -1,5 +1,5 @@
-package com.example.Collections.Concurrent;
-/*
+package com.example.BeforeJava8Features.Collections.Concurrent;
+/**
     @author
     saumitra chauhan
 */
@@ -18,7 +18,7 @@ public class NeedforConcurrent extends Thread{
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("child thrad updating list");
+        System.out.println("child thread updating list");
         threadList.add("D");
     }
 
@@ -41,3 +41,5 @@ public class NeedforConcurrent extends Thread{
         System.out.println(threadList);
     }
 }
+
+// ConcurrentModificationException arises while updating and iterating simultaneously in ordinary collections

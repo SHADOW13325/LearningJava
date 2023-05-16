@@ -1,5 +1,5 @@
-package com.example.Collections.Concurrent;
-/*
+package com.example.BeforeJava8Features.Collections.Concurrent;
+/**
     @author
     saumitra chauhan
 */
@@ -17,14 +17,14 @@ public class ConcurrentHashMap extends Thread{
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("child thrad updating Map");
-        threadList.put(101,"A");
+        System.out.println("child thread updating Map");
+        threadList.put(104,"A");
     }
 
     public static void main(String[] args) throws InterruptedException {
-        threadList.put(104,"D");
+        threadList.put(103,"D");
         threadList.put(102,"B");
-        threadList.put(103,"C");
+        threadList.put(101,"C");
 
         ConcurrentHashMap t = new ConcurrentHashMap();
         t.start();
