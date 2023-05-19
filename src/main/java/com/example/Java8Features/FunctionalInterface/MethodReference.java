@@ -1,5 +1,8 @@
 package com.example.Java8Features.FunctionalInterface;
 
+/**
+ * @author saumitra chauhan
+ */
 public class MethodReference {
 
     public static void main(String[] args) {
@@ -45,8 +48,10 @@ class ReferenceClass {
     }
 }
 
-//  Method Reference is the replacement of lambda expressions. It refers method of functional interface to an existing
-//  method for code reusability.
-//  The syntax is for
-//      static Area -> className::staticMethodName , and
-//      Instance Area -> objectRef::instanceMethodName
+/*
+  Method Reference is the replacement of lambda expressions. It refers method of functional interface to an existing
+  method for code reusability.
+  The syntax is for
+      static Area -> className::staticMethodName , and
+      Instance Area -> objectRef::instanceMethodName
+*/

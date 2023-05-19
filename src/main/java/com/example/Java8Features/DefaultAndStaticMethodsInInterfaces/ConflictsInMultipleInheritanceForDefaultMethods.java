@@ -1,5 +1,8 @@
 package com.example.Java8Features.DefaultAndStaticMethodsInInterfaces;
 
+/**
+ * @author saumitra chauhan
+ */
 interface Left {
     default void m1() {
         System.out.println("Left Interface m1 method");

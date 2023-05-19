@@ -1,5 +1,8 @@
 package com.example.Java8Features.FunctionalInterface;
 
+/**
+ * @author saumitra chauhan
+ */
 public class ConstructorReference {
 
     public static void main(String[] args) {
@@ -31,3 +34,5 @@ interface SampleFunctionalInterface2 {
 
     public abstract ConstructorReference test(int x);
 }
+
+// Constructor Reference can be used to get a certain object from the function
