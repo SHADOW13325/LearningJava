@@ -1,5 +1,8 @@
 package com.example.Java8Features.FunctionalInterface;
 
+/**
+ * @author saumitra chauhan
+ */
 public interface VariablesInLambdaExpression {
 
     public static final int w = 1;
@@ -34,6 +37,8 @@ class Test {
     }
 }
 
-// There are restrictions on the local variables defined on the concrete methods. They can't be modified inside the
-// lambda method. Also you can't declare parameter or variable in the lambda with the same name present as the local
-// variable. There are no restrictions for the instance and class variables.
+/*
+ There are restrictions on the local variables defined on the concrete methods. They can't be modified inside the
+ lambda method. Also you can't declare parameter or variable in the lambda with the same name present as the local
+ variable. There are no restrictions for the instance and class variables.
+*/

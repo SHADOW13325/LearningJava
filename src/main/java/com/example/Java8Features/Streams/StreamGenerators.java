@@ -3,6 +3,9 @@ package com.example.Java8Features.Streams;
 import java.util.Random;
 import java.util.stream.Stream;
 
+/**
+ * @author saumitra chauhan
+ */
 public class StreamGenerators {
     public static void main(String[] args) {
         //of
@@ -23,3 +26,9 @@ public class StreamGenerators {
 
     }
 }
+
+/*
+ Of generates a stream of non-collection objects.
+ iterate takes a seed(initial) value and a unary operator to calculate iteratively infinite stream elements.
+ generate takes a supplier for getting sequential infinite stream elements.
+*/

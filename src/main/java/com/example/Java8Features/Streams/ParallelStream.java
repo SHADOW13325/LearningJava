@@ -4,6 +4,9 @@ import java.util.Arrays;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
+/**
+ * @author saumitra chauhan
+ */
 public class ParallelStream {
 
     public static void main(String[] args) {
@@ -22,5 +25,7 @@ public class ParallelStream {
     }
 }
 
-//  Parallel Stream is used to utilize multiple cores of processor. It divides single stream to multiple
-//  streams that executes parallel on separate cores
+/*
+  Parallel Stream is used to utilize multiple cores of processor. It divides single stream to multiple
+  streams that executes parallel on separate cores
+*/

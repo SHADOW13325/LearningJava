@@ -1,5 +1,5 @@
 package com.example.DesignPatterns;
-/*
+/**
     @author
     saumitra chauhan
 */
@@ -18,3 +18,8 @@ public class SingletonClass {
 
     private SingletonClass(){}
 }
+
+/*
+    This pattern is designed to restrict more than 1 object formation using private constructors.
+    It helps in the memory utilisation.
+*/

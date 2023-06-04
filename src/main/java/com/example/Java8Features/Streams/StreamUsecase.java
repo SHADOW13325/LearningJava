@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
+/**
+ * @author saumitra chauhan
+ */
 public class StreamUsecase {
 
     public static void main(String[] args) {
@@ -47,6 +50,8 @@ public class StreamUsecase {
     }
 }
 
-//  When we have to process bulk objects, we can use streams
-//  It is a iterator class that allows processing of collection of objects in a functional manner.
-//  Also, this iterating can happen only once on a stream.
+/*
+  When we have to process bulk objects, we can use streams
+  It is a iterator class that allows processing of collection of objects in a functional manner.
+  Also, this iterating can happen only once on a stream.
+*/
