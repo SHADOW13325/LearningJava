@@ -20,15 +20,15 @@ public class GroupingBy {
         printMap(groupByGender);
 
         // Collector.filtering() came in Java 1.9 version
-//        groupByGender = Instructors.getAll().stream().collect(Collectors.groupingBy(
-//                Instructor -> Instructor.getYearsOfExperience() >= 10 ? "SENIOR" : "JUNIOR",
-//                Collectors.filtering(Instructor -> Instructor.isOnlineCourses() , Collectors.toList())));
-//        printMap(groupByGender);
-//
-//        groupByGender = Instructors.getAll().stream().collect(Collectors.groupingBy(
-//                Instructor -> Instructor.getYearsOfExperience() >= 10 ? "SENIOR" : "JUNIOR", LinkedHashMap::new,
-//                Collectors.filtering(Instructor -> Instructor.isOnlineCourses() , Collectors.toList())));
-//        printMap(groupByGender);
+        groupByGender = Instructors.getAll().stream().collect(Collectors.groupingBy(
+                Instructor -> Instructor.getYearsOfExperience() >= 10 ? "SENIOR" : "JUNIOR",
+                Collectors.filtering(Instructor -> Instructor.isOnlineCourses() , Collectors.toList())));
+        printMap(groupByGender);
+
+        groupByGender = Instructors.getAll().stream().collect(Collectors.groupingBy(
+                Instructor -> Instructor.getYearsOfExperience() >= 10 ? "SENIOR" : "JUNIOR", LinkedHashMap::new,
+                Collectors.filtering(Instructor -> Instructor.isOnlineCourses() , Collectors.toList())));
+        printMap(groupByGender);
     }
 
     public static void printMap(Map<?, ?> map){
