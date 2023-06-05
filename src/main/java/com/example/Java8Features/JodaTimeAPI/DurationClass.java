@@ -20,6 +20,6 @@ public class DurationClass {
         LocalTime localTime1 = LocalTime.now().plusMinutes(60);
         duration = Duration.between(localTime, localTime1);
         System.out.println("duration = " + duration.toMinutes());
-        
+
     }
 }
