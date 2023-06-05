@@ -1,7 +1,6 @@
 package com.example.Java8Features.JodaTimeAPI;
 
 import java.time.Duration;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
@@ -21,10 +20,6 @@ public class DurationClass {
         LocalTime localTime1 = LocalTime.now().plusMinutes(60);
         duration = Duration.between(localTime, localTime1);
         System.out.println("duration = " + duration.toMinutes());
-
-        LocalDate localDate = LocalDate.now();
-        LocalDate localDate1 = LocalDate.now().plusDays(1);
-        duration = Duration.between(localDate, localDate1);
-        System.out.println("duration = " + duration);
+        
     }
 }
