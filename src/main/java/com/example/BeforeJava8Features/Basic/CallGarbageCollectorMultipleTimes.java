@@ -15,6 +15,7 @@ public class CallGarbageCollectorMultipleTimes {
         System.gc();
         Thread.sleep(5000);
         System.out.println("End of the method");
+
     }
 
     @Override
