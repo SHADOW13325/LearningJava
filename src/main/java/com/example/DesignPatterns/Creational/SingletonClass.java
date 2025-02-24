@@ -1,16 +1,21 @@
-package com.example.DesignPatterns;
+package com.example.DesignPatterns.Creational;
 /**
     @author
     saumitra chauhan
 */
 
+// Double Locking Method
 public class SingletonClass {
 
     private static SingletonClass singletonClass = null;
 
     public static SingletonClass getInstance() {
-        if (singletonClass == null){
-            singletonClass = new SingletonClass();
+        if (singletonClass == null) {
+            synchronized (SingletonClass.class) {
+                if (singletonClass == null) {
+                    singletonClass = new SingletonClass();
+                }
+            }
         }
 
         return singletonClass;
