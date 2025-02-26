@@ -1,4 +1,9 @@
-package com.example.DesignPatterns;
+package com.example.DesignPatterns.Creational;
+
+/*
+Factory pattern is responsible for holding the mechanism of how to create the instances of the class.
+There can by multiple factory creating same object but in different way (passing parameters at the time of creation)
+ */
 
 public class FactoryPattern {
     public static void main(String[] args) {
@@ -12,6 +17,7 @@ public class FactoryPattern {
     }
 }
 
+// Factory
 abstract class Restaurant {
     public Burger orderBurger(){
         Burger burger = createBurger();
@@ -36,7 +42,7 @@ class MeatBurgerRestaurant extends Restaurant {
     }
 }
 
-
+// Product
 interface Burger {
     void prepare();
 }
