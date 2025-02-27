@@ -1,4 +1,4 @@
-package com.example.DesignPatterns.Behavioral;
+package com.example.DesignPatterns.Structural;
 
 public class AdapterPattern {
     public static void main(String[] args) {
@@ -12,7 +12,7 @@ public class AdapterPattern {
 
 interface WeightAdapter {
 
-    double getWeightInKg ();
+    double getWeightInKg();
 }
 
 class WeightAdapterImpl implements WeightAdapter {
