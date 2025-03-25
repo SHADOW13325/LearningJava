@@ -2,7 +2,7 @@ package com.example.DesignPatterns.Creational;
 
 /*
 Factory pattern is responsible for holding the mechanism of how to create the instances of the class.
-There can by multiple factory creating same object but in different way (passing parameters at the time of creation)
+There can be multiple factory creating same object but in different way (passing parameters at the time of creation)
  */
 
 public class FactoryPattern {
