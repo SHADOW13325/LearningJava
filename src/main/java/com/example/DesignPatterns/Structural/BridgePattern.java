@@ -8,11 +8,11 @@ package com.example.DesignPatterns.Structural;
 
 public class BridgePattern {
     public static void main(String[] args) {
-        LivingThings tree = new Tree(new TreeBreathe(), new Herbivorus());
+        LivingThings tree = new Tree(new TreeBreathe(), new Herbivores());
         tree.breatheProcess();
         tree.eatProcess();
 
-        LivingThings fish = new Fish(new FishBreathe(), new Omnivorus());
+        LivingThings fish = new Fish(new FishBreathe(), new Omnivores());
         fish.breatheProcess();
         fish.eatProcess();
     }
@@ -92,7 +92,7 @@ interface IEatImplementor {
     void eat();
 }
 
-class Herbivorus implements IEatImplementor {
+class Herbivores implements IEatImplementor {
 
     @Override
     public void eat() {
@@ -108,7 +108,7 @@ class Carnivorus implements IEatImplementor {
     }
 }
 
-class Omnivorus implements IEatImplementor {
+class Omnivores implements IEatImplementor {
 
     @Override
     public void eat() {
